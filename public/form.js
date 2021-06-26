@@ -78,7 +78,7 @@ function uploadImage(email, title, link, desc, category, image) {
 
     uploadTask.on('state_changed', function (snapshot) {
         var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        document.getElementById('UpProgress').innerHTML = 'Upload' + progress + '%';
+        // document.getElementById('UpProgress').innerHTML = 'Upload' + progress + '%';
     },
     
         function (error) {
