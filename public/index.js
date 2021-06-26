@@ -35,7 +35,7 @@ document.getElementById('category').addEventListener('change', function () {
         snapshot.forEach(function (element) {
             clearBox("toor")
             document.querySelector('#root').innerHTML += `
-        <div class="card mb-3">
+        <div class="card mb-1 shadow-sm p-3 mb-5 bg-white rounded">
             <a href="${element.val().link}"><img class="card-img-top" src="${element.val().image}" id="imageSRC"></a>
             <div class="card-body">
                 <h5 class="card-title" id="title">${element.val().title}</h5>
