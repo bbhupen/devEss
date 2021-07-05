@@ -4,15 +4,20 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>😘DevEss</title>
+    <title>DevEss</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script data-name="BMC-Widget" data-cfasync="false"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="bbhupen"
+            data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right"
+            data-x_margin="18" data-y_margin="18"></script>
 </head>
 
 <style>
 
     body{
-        font-family: 'Times New Roman', Times, serif;
+        font-family: geometric, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         background-color: rgb(255, 252, 246);
     }
     img {
@@ -23,15 +28,17 @@
 </style>
 
 
-<body style="text-align: center;">
-  <div class="jumbotron jumbotron-fluid" style= "background-color: rgb(145, 215, 255);">
+<body style="text-align: center; background-color: rgb(247, 255, 234);" >
+  <div class="jumbotron jumbotron-fluid" 
+  style="background-image: url('cover.png');
+        object-fit: cover;" >
       <div class="container">
-          <h1 class="display-4"><a style="color: red;">Dev</a>eloper <a style="color: red;">Ess</a>ential</h1>
+          <h1 class="display-4" style="font-weight: bold;"><a style="color: rgb(255, 233, 35);">Dev</a><a style="color: rgb(255, 255, 255);">eloper </a><a style="color:rgb(255, 233, 35);">Ess</a><a style="color: rgb(255, 255, 255);">ential</a></h1>
 
             
 
-          <p class="lead">As a developer, nothing piques my interest more than developer swag, internships and other essentials!
-            I created DevEss to scratch my own itch by starting a curation of such opportunities. These
+          <p class="lead" style="color: rgb(204, 204, 204); font-size: 16px;">As a developer, nothing piques my interest more than developer swag, internships and other essentials!
+            I created <a style ="color: rgb(255, 233, 35);">DevEss</a> to scratch my own itch by starting a curation of such opportunities. These
               are crowdsourced and verified by the community. All of them ship worldwide! 🚀</p>
       </div>
   </div>
@@ -41,7 +48,6 @@
         <div id="form">
             <label for="category">Category</label>
             <select class="form-control" id="category" required>
-                <option style="display:none">Select an option</option>
                 <option>Swags</option>
                 <option>Internships</option>
                 <option>Useful Websites</option>
@@ -53,11 +59,13 @@
     
 
     <div class="container" style="padding-top: 2em;">
-        <div id="root">
-        </div>
         <div id="toor">
             Select a category from the above beep beep 🙄
         </div>
+
+        <div id="root" style="padding-top: 2em;">
+        </div>
+        
     </div>
 
 

@@ -18,15 +18,13 @@ firebase.initializeApp(firebaseConfig);
 var getDataRef = firebase.database()
 
 
-
-
 // var imageSRC = getInputVal("imgSRC");
 // var title = getInputVal("title");
 // var link = getInputVal("link");
 // var desc = getInputVal("desc");
 
 
-
+View("Swags")
 
 
 document.getElementById('category').addEventListener('change', function () {
@@ -59,4 +57,21 @@ function clearBox(elementID) {
 
 function getInputVal(id) {
     return document.getElementById(id).value;
+}
+
+function View(category) {
+    getDataRef.ref(category).once("value", function (snapshot) {
+        snapshot.forEach(function (element) {
+            document.querySelector('#root').innerHTML += `
+        <div class="card mb-1 shadow-sm p-3 mb-5 bg-white rounded">
+            <a href="${element.val().link}"><img class="card-img-top" src="${element.val().image}" id="imageSRC"></a>
+            <div class="card-body">
+                <h5 class="card-title" id="title">${element.val().title}</h5>
+                <p class="card-text" id="desc">${element.val().desc}</p>
+                <a href="${element.val().link}"><button class="btn btn-dark" >Check it
+                        out</button></a>
+            </div>
+        </div>`
+        })
+    })
 }
