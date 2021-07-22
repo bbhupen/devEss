@@ -1,48 +1,35 @@
 import { Component, OnChanges, OnInit } from "@angular/core";
 import { MediaService } from "../../services/content.services"
 import { map } from 'rxjs/operators';
-
-
+import { AngularFireDatabase } from "@angular/fire/database";
+import { Observable } from "rxjs";
+import { FormControl } from "@angular/forms";
 
 @Component({
     selector: 'content',
-    templateUrl: './content.component.html'
+    templateUrl: './content.component.html',
+    styleUrls: ['./content.component.css']
 })
 
-export class Content implements OnInit, OnChanges {
+export class Content{
 
-    swag = "Swags";
-    data: any;
-    description: any;
-    title: any;
-    link: any;
-    imguri: any;
+    data: Observable<any[]>;
+    cats: Observable<any[]>;
+    selected: string = '';
 
+    category = "Swags";
+
+    select(event: any){
+        this.category = event.target.value
+        console.log(this.category)
+        this.data = this.db.list(this.category).valueChanges();
+    }
     
-    constructor(private mediaservice: MediaService){ }
-
-    ngOnChanges(): void{
-        this.retrieveMedia();
-    }
-
-    ngOnInit(): void {
-        this.retrieveMedia();
-
-    }
-
-    // refreshList(): void {
-    //     this.retrieveMedia();
-    // }
-
-
-    retrieveMedia(): void {
-        this.mediaservice.getAll().snapshotChanges().pipe(map(changes => 
-            changes.map( c => (
-                {key: c.payload.key,...c.payload.val()}
-            )))).subscribe(data => {
-                this.data = data;
-                console.log(data)
-            })
+    constructor(public db: AngularFireDatabase){ 
+        
+        this.data = db.list(this.category).valueChanges();
+        this.cats = db.list('/').valueChanges();
+        
     }
     
 

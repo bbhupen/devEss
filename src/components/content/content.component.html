@@ -1,9 +1,31 @@
-    <div *ngFor="let data of data" class="card mb-1 shadow-sm p-3 mb-5 bg-white rounded">
-        <a href=data.link><img class="card-img-top" [src]=data.link id="imageSRC"></a>
+
+<div class="container" style="padding: 2em 0 2em 0;">
+    <div id="form">
+        <label for="category">Category</label>
+        <select (change)="select($event)" class="form-control" required >
+            <option>Swags</option>
+            <option>Internships</option>
+            <option>Useful Websites</option>
+            <option>Study Materials</option>
+            <option>Coffee</option>
+        </select>
+    </div>
+</div>
+<div>
+    <div style="padding-bottom: 2em;">
+        Select a category from the above beep beep 🙄
+    </div>
+    <div class="row mt-3 d-flex justify-content-center">
+        <div *ngFor="let data of data | async" class="card m-10 shadow-sm rounded col-md-6" style="width: 30rem;margin: 2em;">
+        <a href={{data.link}} target="_blank" rel="noopener noreferrer"><img class="card-img-top" [src]=data.image id="imageSRC"></a>
         <div class="card-body">
-            <h5 class="card-title" id="title">{{data.key}}</h5>
+            <h5 class="card-title" id="title">{{data.title}}</h5>
             <p class="card-text" id="desc">{{data.desc}}</p>
-            <a href={{data.link}}><button class="btn btn-dark" >Check it
+            <a href={{data.link}} target="_blank" rel="noopener noreferrer"><button class="btn btn-dark" >Check it
                     out</button></a>
         </div>
-    </div>    
+    </div>
+   
+</div>    
+
+</div>

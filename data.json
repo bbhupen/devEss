@@ -1,0 +1,64 @@
+[
+    {
+        "key": "Internships",
+        "-MduQCJk4U0oEd-G4d9u": {
+            "desc": "Indeed is the #1 job site in the world1 with over 25 crore unique visitors2 every month. Indeed strives to put job seekers first, giving them free access to search for jobs, post resumes, and research companies. Every day, we connect millions of people to new opportunities.",
+            "email": "bbhupen601@gmail.com",
+            "image": "https://firebasestorage.googleapis.com/v0/b/devess-b79b7.appspot.com/o/Internships%2Findeed.png?alt=media&token=c3a811f6-92f9-4944-bbe4-c9159d4009e8",
+            "link": "https://indeed.com",
+            "title": "Indeed.com"
+        }
+    },
+    {
+        "key": "Swags",
+        "-Md8zpgV2FSXxiS4IjU3": {
+            "desc": "Open source is changing the world - one pull request at a time.",
+            "email": "bbhupen601@gmail.com",
+            "image": "https://firebasestorage.googleapis.com/v0/b/devess-b79b7.appspot.com/o/Swags%2Fhacktober.png?alt=media&token=a1ecbc80-b7b9-4c3d-91a1-47d4a6a95846",
+            "link": "https://hacktoberfest.digitalocean.com/",
+            "title": "Hacktober Fest "
+        },
+        "-Md9-3zE083eZzETSy6_": {
+            "desc": "Fix a bug, get a fashionable pair of socks!",
+            "email": "bbhupen601@gmail.com",
+            "image": "https://firebasestorage.googleapis.com/v0/b/devess-b79b7.appspot.com/o/Swags%2Fnpm.png?alt=media&token=c2f8e3e8-62b3-438d-a6e5-1ba7d76f55d8",
+            "link": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
+            "title": "NPM"
+        },
+        "-Md9-BzP6iXCIWhXVB_R": {
+            "desc": "Submit 15 builds in 30 days, get stickers sent your way! (Ships only to North America and Europe)",
+            "email": "bbhupen601@gmail.com",
+            "image": "https://firebasestorage.googleapis.com/v0/b/devess-b79b7.appspot.com/o/Swags%2Fcodeship.png?alt=media&token=1fbc02aa-c6c2-4b3e-8ca2-0c6169fe7747",
+            "link": "https://codeship.com/swag",
+            "title": "Codeship"
+        },
+        "-Md9-LZzRM0D4caUVCfZ": {
+            "desc": "Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball!",
+            "email": "bbhupen601@gmail.com",
+            "image": "https://firebasestorage.googleapis.com/v0/b/devess-b79b7.appspot.com/o/Swags%2FdevRant.png?alt=media&token=d1612ce4-8039-4b66-9812-840a9ca86bc4",
+            "link": "https://devrant.com/free-stickers",
+            "title": "devRant"
+        },
+        "-Md90BBljkpQmhaPD5r1": {
+            "desc": "Get swag for migrating websites to Docusaurus 2!",
+            "email": "bbhupen601@gmail.com",
+            "image": "https://firebasestorage.googleapis.com/v0/b/devess-b79b7.appspot.com/o/Swags%2F.png?alt=media&token=ef24f980-b27c-43ed-b7b2-792a7663f1fd",
+            "link": "https://github.com/facebook/docusaurus/issues/1834",
+            "title": "Docusaurus"
+        },
+        "-Md90J_2X7kMLHdoyBzf": {
+            "desc": "Simply fill in your postal address and get free stickers! (Shipped worldwide)",
+            "email": "bbhupen601@gmail.com",
+            "image": "https://firebasestorage.googleapis.com/v0/b/devess-b79b7.appspot.com/o/Swags%2F%20.png?alt=media&token=5a0ffca2-f816-43e3-a076-97daa302fa25",
+            "link": "https://redwoodjs.com/stickers",
+            "title": "RedwoodJS"
+        },
+        "-Md90bZvDV-OI_iCRNNA": {
+            "desc": "Attend the hackathon, mini events and many more fun things. Earn swags and more",
+            "email": "bbhupen601@gmail.com",
+            "image": "https://firebasestorage.googleapis.com/v0/b/devess-b79b7.appspot.com/o/Swags%2FBhupen%20Basumatary.png?alt=media&token=eef93c85-7ac7-4616-8f06-6b96f1a96e97",
+            "link": "https://mlh.io",
+            "title": "MLH"
+        }
+    }
+]
