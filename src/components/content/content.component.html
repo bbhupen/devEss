@@ -1,9 +1,9 @@
-<div class="card mb-1 shadow-sm p-3 mb-5 bg-white rounded">
-    <a href="${element.val().link}"><img class="card-img-top" src="${element.val().image}" id="imageSRC"></a>
-    <div class="card-body">
-        <h5 class="card-title" id="title">{{title}}</h5>
-        <p class="card-text" id="desc">{{description}}</p>
-        <a href="${element.val().link}"><button class="btn btn-dark" >Check it
-                out</button></a>
-    </div>
-</div>
+    <div *ngFor="let data of data" class="card mb-1 shadow-sm p-3 mb-5 bg-white rounded">
+        <a href=data.link><img class="card-img-top" [src]=data.link id="imageSRC"></a>
+        <div class="card-body">
+            <h5 class="card-title" id="title">{{data.key}}</h5>
+            <p class="card-text" id="desc">{{data.desc}}</p>
+            <a href={{data.link}}><button class="btn btn-dark" >Check it
+                    out</button></a>
+        </div>
+    </div>    
