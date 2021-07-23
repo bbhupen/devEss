@@ -1,7 +1,9 @@
-#imageSRC{
-    padding-top: 24px;
-    width:27rem;
-    height:25rem;
-    object-fit:cover;
-    position: center;
-  }
+#outerdivcontent{
+  margin: 5px;
+}
+.card-img-top {
+  padding-top: 12px;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
