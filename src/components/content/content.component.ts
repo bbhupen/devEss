@@ -1,5 +1,4 @@
 import { Component, OnChanges, OnInit } from "@angular/core";
-import { MediaService } from "../../services/content.services"
 import { map } from 'rxjs/operators';
 import { AngularFireDatabase } from "@angular/fire/database";
 import { Observable } from "rxjs";
