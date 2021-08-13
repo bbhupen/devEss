@@ -1,5 +1,4 @@
-import { Component, OnChanges, OnInit } from "@angular/core";
-import { map } from 'rxjs/operators';
+import { Component, OnChanges, OnInit } from "@angular/core";;
 import { AngularFireDatabase } from "@angular/fire/database";
 import { Observable } from "rxjs";
 import { FormControl } from "@angular/forms";
